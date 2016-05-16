@@ -1,0 +1,26 @@
+<div class="container-fluid" ng-controller="ItemsController">
+  <div class="row">
+	<div class="col-md-2">
+		 Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Name</option>
+        <option value="area">Area</option>
+		<option value="population">Population</option>
+      </select>
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="phones">
+        <li ng-repeat="item in items | orderBy:orderProp" class="thumbnail">
+          <a ng-if="item.islastnode" href="#/home/{{item.itemid}}" class="thumb"><img ng-src="{{item.imageurl}}"></a>
+		  <a ng-if="!item.islastnode" href="#/home/detail/{{item.itemid}}" class="thumb"><img ng-src="{{item.imageurl}}"></a>
+          <a href="#/home/{{item.itemid}}">{{item.name}}</a> &nbsp {{item.islastnode}}
+          <p>Area: {{item.area}}</p>
+		  <p>Population: {{item.population}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>

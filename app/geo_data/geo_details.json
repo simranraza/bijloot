@@ -1,0 +1,38 @@
+[{
+	"itemid": 41,
+	"name": "Kabul",
+	"description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+	"itemAttributes":
+		{
+			"itemAttributes":
+				[
+					{"province_state": "province1"},
+					{ "area": 54522},
+					{"no_of_districts": 10},
+					{"population": 894548},
+					{"density": "4546"},
+					{"area_code": "+93"}
+				]
+		},
+	"images":
+		["img1","img2","img3","img4"]
+},
+{
+	"itemid": 43,
+	"name": "Dhaka",
+	"description": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+	"itemAttributes":
+		{
+			"itemAttributes":
+				[
+					{"province_state": "province323"},
+					{ "area": 24335},
+					{"no_of_districts": 3},
+					{"population": 74673},
+					{"density": "532"},
+					{"area_code": "+95"}
+				]
+		},
+	"images":
+		["img43","img62","img43","img41"]
+}]
